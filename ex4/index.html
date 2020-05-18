@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EXE 4 - Maayan Lavi</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+              integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Indie+Flower&family=Lemon&family=Pompiere&family=Sigmar+One&family=Special+Elite&family=Walter+Turncoat&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="HeavenOrHell">
+		
+		<div class="container">
+            <header>
+                <h2 class="formTitle">Remember! God sees everything -<br>
+					Answer honestly.<br> </h2>
+			</header>
+            <main>
+			<form id="myForm" form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET">
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>Your full name:</b></label>
+    					<div class="col-sm-4">
+      					<input id="nameCheck2" type="text" class="form-control"  name="fullName" placeholder="Enter your full name" pattern="[a-zA-Z]+[ ][a-zA-Z]+" title="Your name must contain only letters and at least 2 words" required> <span class="icon"></span>
+    					</div>
+    				<section id="nameCheckFalse"></section>
+				</div>
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>Select a secret code that will be used at the entrance to the gates of heaven / hell:</b></label>
+    				<div class="col-sm-4">
+      					<input type="password" class="form-control"  name="pass" placeholder="Enter your code" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your code must contain at least one number, one uppercase and one lowercase letter and has to be at least 8 characters or more" required><span class="icon"></span>
+    				</div>
+				</div>
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>Enter your Email to be used for communication with God:</b></label>
+    				<div class="col-sm-4">
+      					<input type="email" class="form-control"  name="mail" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Your Email adress must contain @ and ." required><span class="icon"></span>
+    				</div>
+				</div>				
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>Enter your phone number (the KOSHER one):</b></label>
+    				<div class="col-sm-4">
+      					<input type="tel" class="form-control" name="phone" placeholder="Enter your KOSHER phone"pattern="[0-9]{9,10}$" title="Your Email adress must contain @ and ." required><span class="icon"></span>
+					</div>
+					<h6>*if you don't have one, please press "0000000000"</h6>
+				</div>
+				<h6><b>Do you believe in God?</b></h6>
+				<div class="custom-control custom-radio form-group">
+  					<input type="radio" id="customRadio1" name="gender" value="Yes" class="custom-control-input">
+  					<label class="custom-control-label" for="customRadio1">Yes</label>
+				</div>
+				<div class="custom-control custom-radio form-group">
+  					<input type="radio" id="customRadio2" name="gender" value="No" class="custom-control-input">
+  					<label class="custom-control-label" for="customRadio2">No</label>
+				</div>					
+		 		<div class="custom-control custom-radio form-group">
+  					<input type="radio" id="customRadio3" name="gender" value="I have not decided yet" class="custom-control-input">
+  					<label class="custom-control-label" for="customRadio3">I have not decided yet</label>
+				</div>	
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>Enter the website address you spend most of the day:</b></label>
+    				<div class="col-sm-4">
+      					<input type="url" value="http://" class="form-control" name="website" placeholder="Enter the URL website">
+    				</div>
+				</div>
+
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>How many times a day do you pray?</b></label>
+    				<div class="col-sm-4">
+      					<input type="number" class="form-control" name="coffee" placeholder="Pick a number" min="0">
+    				</div>
+				</div>
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label"><b>Rate the number of commandments you made in the last year:</b></label>
+    				<div class="col-sm-4 rangeFix">
+      					0 <input id="commandments" data-slider-id='temp' name="temper" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="30"> 100
+    				</div>
+				</div>
+				<div class="form-group row">
+    				<label class="col-sm-4 col-form-label" for="exampleFormControlTextarea1"><b>Explain why you deserve to get to heaven:</b></label>
+    				<div class="col-sm-4">
+      					<textarea class="form-control" id="exampleFormControlTextarea1" rows="2" maxlength="40" name="address" placeholder="write here"></textarea>
+    				</div>
+				</div>
+				<div class="checkbox-group required">
+					<h6> <b>Which of the following is <U>not</U> one of the Ten Commandments?</b></h6>
+				 <div class="custom-control custom-checkbox form-group">
+  					<input type="checkbox" class="custom-control-input" id="customCheck1" name="interests[]" value="Don't copy in tests">
+ 					<label class="custom-control-label" for="customCheck1">Don't copy in tests</label>
+				</div>
+				<div class="custom-control custom-checkbox form-group">
+  					<input type="checkbox" class="custom-control-input" id="customCheck2" name="interests[]" value="Don't order food from WOLT if there is food in the fridge">
+ 					<label class="custom-control-label" for="customCheck2">Don't order food from WOLT if there is food in the fridge</label>
+				</div>
+				 <div class="custom-control custom-checkbox form-group">
+  					<input type="checkbox" class="custom-control-input" id="customCheck3" name="interests[]" value="Respect your father and mother">
+ 					<label class="custom-control-label" for="customCheck3">Respect your father and mother</label>
+				</div>
+				 <div class="custom-control custom-checkbox form-group">
+  					<input type="checkbox" class="custom-control-input" id="customCheck4" name="interests[]" value="Don't forget the minimum requirements">
+ 					<label class="custom-control-label" for="customCheck4">Don't forget the minimum requirements</label>
+				</div>	
+				</div>
+				<div class="form-group row">
+    				<label class="col-sm-4 ageStyle"><b>Choose the right one for you:</b></label>
+					<select class="col-sm-3 custom-select" name="age" id="selectAge">
+						<option value="">select an option</option>
+						<option>I am a religious person</option>
+						<option>I am a religious person and also a good person</option>
+						<option>I am not a religious person but a good person</option>
+						<option>I am not a religious person or a good person</option>
+					</select>
+				</div>
+				<label><input type="image" src="SVG/hellOrHeaven.svg" formtatget="_blank" style="padding-left: 250px;"></label>	
+            </form>
+        </main>
+		</div>
+		<section id=txt>
+			Congratulations!<br>
+			you're dead...<br>
+			Fill out the form in the next step, <br>
+			and I'll decide where your place will be - <br>
+			Heaven or Hell? <br>
+			Welcome to the sky,<br>
+			God.
+		</section>
+		<article class="sky">
+			<div class="moon"></div>
+			<div class="clouds_two"></div>
+			<div class="clouds_one"></div>
+			<div class="clouds_three"></div>
+			
+		</article>
+
+		<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
